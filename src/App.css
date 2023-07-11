@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --background: #F3F6F9;
+    --hoverBackground: #DFE5EC;
+    --sidebarColor: #1B1D20;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Sidebar -> Styles */
+.ps-sidebar-root {
+    padding: 0.5rem;
+}
+
+.ps-sidebar-root,
+.ps-submenu-content,
+.ps-open,
+.ps-sidebar-container {
+    background-color: var(--background) !important;
+}
+
+.ps-open,
+.ps-submenu-content {
+    margin-bottom: 0;
+}
+
+.ps-menu-button {
+    border-radius: 2rem;
+    transition: all 0.1s linear;
+    line-height: 1.5;
+}
+
+.ps-menu-label {
+    font-size: 14px;
+    color: var(--sidebarColor);
+}
+
+.ps-menu-label,
+.ps-submenu-expand-icon,
+.ps-menu-icon {
+    background: inherit !important;
+}
+
+.ps-submenu-expand-icon {
+    padding-bottom: 2px;
+}
+
+.ps-menu-button:hover {
+    background-color: var(--hoverBackground) !important;
+    color: var(--hoverColor) !important;
+}
+
+.ps-menuitem-root {
+    margin-bottom: 0.5rem;
+}
+
+.ps-menuitem-root:last-child {
+    margin-bottom: 0;
+}
