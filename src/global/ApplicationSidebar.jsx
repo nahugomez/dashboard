@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { SidebarContext } from "../context/SidebarContext";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import HomeIcon from "@mui/icons-material/Home";
 import SettingsIcon from "@mui/icons-material/Settings";
@@ -7,8 +8,10 @@ import AssignmentIcon from "@mui/icons-material/Assignment";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 
 const ApplicationSidebar = () => {
+    const { collapsed } = useContext(SidebarContext);
+
     return (
-        <Sidebar>
+        <Sidebar collapsed={collapsed}>
             <Menu>
                 <MenuItem icon={<HomeIcon />}>Inicio</MenuItem>
                 <SubMenu icon={<SettingsIcon />} label="Configuraciones">
@@ -27,7 +30,7 @@ const ApplicationSidebar = () => {
                     <MenuItem>Personas</MenuItem>
                     <MenuItem>Almacen</MenuItem>
                 </SubMenu>
-                <SubMenu icon={<InsertDriveFileIcon  />} label="Contratos">
+                <SubMenu icon={<InsertDriveFileIcon />} label="Contratos">
                     <MenuItem>Personal</MenuItem>
                     <MenuItem>Inventario</MenuItem>
                     <MenuItem>Stock</MenuItem>
