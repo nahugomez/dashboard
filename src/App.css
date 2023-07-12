@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+/* Styles -> Universal */
 :root {
     --background: #F3F6F9;
     --hoverBackground: #DFE5EC;
@@ -10,10 +11,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+p {
+    margin: 0;
+}
 
-/* Sidebar -> Styles */
+
+/* Styles --> Sidebar */
 .ps-sidebar-root {
     padding: 0.5rem;
+    border: none !important;
 }
 
 .ps-sidebar-root,
