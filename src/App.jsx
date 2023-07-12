@@ -13,7 +13,7 @@ function App() {
                 <BrowserRouter>
                     <CssBaseline />
                     <Navbar />
-                    <Box display={"flex"} sx={{ minHeight: "calc(100vh - 3rem)" }}>
+                    <Box display={"flex"} sx={{ minHeight: "calc(100vh - 4rem)" }}>
                         <ApplicationSidebar />
                         <Box padding={"1rem"} margin={"0.5rem"} borderRadius={"1rem"} width={"100%"} sx={{ backgroundColor: "#FFF" }}>
                             <ApplicationRouter />

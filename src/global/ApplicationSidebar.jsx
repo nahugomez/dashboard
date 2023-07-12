@@ -11,7 +11,7 @@ const ApplicationSidebar = () => {
     const { collapsed } = useContext(SidebarContext);
 
     return (
-        <Sidebar collapsed={collapsed}>
+        <Sidebar collapsed={collapsed} style={{maxHeight: "calc(100vh - 4rem)"}}>
             <Menu>
                 <MenuItem icon={<HomeIcon />}>Inicio</MenuItem>
                 <SubMenu icon={<SettingsIcon />} label="Configuraciones">
