@@ -71,6 +71,10 @@ p {
   margin-bottom: 0;
 }
 
+.ps-submenu-content > ul {
+    padding: 0.5rem;
+}
+
 .ps-menu-button {
   border-radius: 2rem;
   transition: all 0.1s linear;
