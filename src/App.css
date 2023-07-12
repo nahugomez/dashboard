@@ -38,6 +38,7 @@ p {
     border-radius: 2rem;
     transition: all 0.1s linear;
     line-height: 1.5;
+    padding-inline: 14px !important;
 }
 
 .ps-menu-label {
@@ -52,7 +53,7 @@ p {
 }
 
 .ps-submenu-expand-icon {
-    padding-bottom: 2px;
+    padding-bottom: 4px;
 }
 
 .ps-menu-button:hover {

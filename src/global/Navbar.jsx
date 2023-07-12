@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <Box display={"flex"} alignItems={"center"} justifyContent={"space-between"} padding={"1rem"} width={"100%"} height={"4rem"} sx={{ backgroundColor: "#F3F6F9" }}>
             <Box display={"flex"} alignItems={"center"}>
-                <IconButton onClick={() => setCollapsed(!collapsed)} sx={{ marginInline: "0.5rem" }}>
+                <IconButton onClick={() => setCollapsed(!collapsed)} sx={{ marginRight: "0.5rem" }}>
                     <MenuIcon />
                 </IconButton>
                 <p style={{ fontSize: "1rem" }}>Municipalidad de Capital</p>
