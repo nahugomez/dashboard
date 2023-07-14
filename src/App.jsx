@@ -15,7 +15,7 @@ function App() {
                     <Navbar />
                     <Box display={"flex"} sx={{ minHeight: "calc(100vh - 4rem)" }}>
                         <ApplicationSidebar />
-                        <Box padding={"1rem"} margin={"0.5rem"} borderRadius={"1rem"} width={"100%"} sx={{ backgroundColor: "#FFF" }}>
+                        <Box padding={"1rem"} margin={"0.5rem"} borderRadius={"1rem"} width={"100%"} sx={{ backgroundColor: "#FFF", maxHeight: "calc(100vh - 5rem)", overflowY: "scroll" }}>
                             <ApplicationRouter />
                         </Box>
                     </Box>
