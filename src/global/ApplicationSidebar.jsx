@@ -18,7 +18,7 @@ const ApplicationSidebar = () => {
       <Menu>
         {collapsed ? (
           <MenuItem icon={<ArrowForwardIosIcon />} onClick={() => setCollapsed(!collapsed)}>
-            Ocultar Menu
+            Mostrar Menu
           </MenuItem>
         ) : (
           <MenuItem icon={<ArrowBackIosNewIcon />} onClick={() => setCollapsed(!collapsed)}>
