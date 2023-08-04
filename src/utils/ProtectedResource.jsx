@@ -9,8 +9,10 @@ const ProtectedResource = ({ children, role }) => {
   if (!authenticated) {
     return (
       <Box>
-        <p>No se encuentra autenticado actualmente. Inicie sesión para poder ver la pagina</p>
-        <Button variant="contained" onClick={login}>
+        <p style={{ marginBottom: "0.5rem" }}>
+          No se encuentra autenticado actualmente. Inicie sesión para poder ver la pagina
+        </p>
+        <Button variant="outlined" onClick={login}>
           Iniciar Sesión
         </Button>
       </Box>
@@ -20,8 +22,10 @@ const ProtectedResource = ({ children, role }) => {
   if (!hasRole(role)) {
     return (
       <Box>
-        <p>No tiene los permisos suficientes para acceder a esta sección.</p>
-        <Button variant="contained" onClick={logout}>
+        <p style={{ marginBottom: "0.5rem" }}>
+          No tiene los permisos suficientes para acceder a esta sección. Cambie sesión e intente de nuevo.
+        </p>
+        <Button variant="outlined" onClick={logout}>
           Cerrar Sesión
         </Button>
       </Box>
