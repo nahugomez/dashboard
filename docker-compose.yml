@@ -15,3 +15,12 @@ services:
     ## 1) docker-compose up --build --no-recreate -d (Second time: docker-compose up -d)
     ## 2) docker exec -it <container> sh
     ## 3) npm install && npm run dev
+
+  keycloack:
+    image: jboss/keycloak
+    ports:
+      - "8080:8080"
+    environment:
+      - "KEYCLOAK_USER=admin"
+      - "KEYCLOAK_PASSWORD=admin"
+      - "DB_VENDOR=H2"

@@ -4,6 +4,6 @@
   "dictionaryDefinitions": [],
   "dictionaries": [],
   "words": [],
-  "ignoreWords": [],
+  "ignoreWords": ["keycloak"],
   "import": []
 }
