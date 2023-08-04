@@ -13,7 +13,6 @@ const AuthProvider = ({ children }) => {
   // Configuración de Keycloak
   useEffect(() => {
     const keycloakInstance = new Keycloak("/keycloak.json");
-    console.log(keycloakInstance);
     keycloakInstance
       .init({ onLoad: "check-sso" })
       .then((authenticated) => {
@@ -28,7 +27,7 @@ const AuthProvider = ({ children }) => {
 
   // Funciones para iniciar y cerrar sesión
   const login = () => keycloak && keycloak.login();
-  const logout = () => keycloak && keycloak.logout({ redirectUri: "http://localhost:3000/welcome" });
+  const logout = () => keycloak && keycloak.logout({ redirectUri: "http://localhost:8000/" });
 
   // Verificación de roles y permisos
   const hasRole = (role) => keycloak && keycloak.hasResourceRole(role);
