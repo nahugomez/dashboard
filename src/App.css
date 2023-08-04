@@ -15,7 +15,7 @@ p {
   margin: 0;
 }
 
-/* Stlyes -> Scrollbar */
+/* Styles -> Scrollbar */
 /* Firefox */
 * {
   scrollbar-width: thin;
@@ -72,7 +72,7 @@ p {
 }
 
 .ps-submenu-content > ul {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 .ps-menu-button {

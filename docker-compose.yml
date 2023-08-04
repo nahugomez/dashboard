@@ -1,17 +1,17 @@
 version: "3.4"
 services:
- dashboard-image:
-   image: node:alpine
-   container_name: dashboard-app
-   entrypoint: /bin/sh
-   ports:
-     - 8000:8000
-   working_dir: /srv/app
-   volumes:
-     - type: bind
-       source: ./
-       target: /srv/app
-   tty: true
-   ## 1) docker-compose up --build --no-recreate -d (Second time: docker-compose up -d)
-   ## 2) docker exec -it <container> sh
-   ## 3) npm install && npm run dev
+  dashboard-image:
+    image: node:alpine
+    container_name: dashboard-app
+    entrypoint: /bin/sh
+    ports:
+      - 8000:8000
+    working_dir: /srv/app
+    volumes:
+      - type: bind
+        source: ./
+        target: /srv/app
+    tty: true
+    ## 1) docker-compose up --build --no-recreate -d (Second time: docker-compose up -d)
+    ## 2) docker exec -it <container> sh
+    ## 3) npm install && npm run dev

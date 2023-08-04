@@ -31,7 +31,7 @@ const ApplicationSidebar = () => {
         <SubMenu icon={<SettingsIcon />} label="Configuraciones" component={<Link to={"/configs"} />}>
           <MenuItem>Personal</MenuItem>
           <MenuItem>Personas</MenuItem>
-          <MenuItem>Almacen</MenuItem>
+          <MenuItem>Almacén</MenuItem>
         </SubMenu>
         <SubMenu icon={<InventoryIcon />} label="Recursos" component={<Link to={"/resources"} />}>
           <MenuItem>Personal</MenuItem>
@@ -42,7 +42,7 @@ const ApplicationSidebar = () => {
         <SubMenu icon={<AssignmentIcon />} label="Tareas" component={<Link to={"/task"} />}>
           <MenuItem>Personal</MenuItem>
           <MenuItem>Personas</MenuItem>
-          <MenuItem>Almacen</MenuItem>
+          <MenuItem>Almacén</MenuItem>
         </SubMenu>
         <SubMenu icon={<InsertDriveFileIcon />} label="Contratos">
           <MenuItem>Personal</MenuItem>
