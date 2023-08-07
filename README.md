@@ -21,7 +21,7 @@ Para el desarrollo de la interfaz del usuario, se van a seguir los lineamientos 
 
 Por suerte, no es necesario crear todos los componentes siguiendo esos lineamientos desde cero. En este caso, vamos a utilizar [MaterialUI](https://mui.com/material-ui/getting-started/installation/) que nos va a dar una serie de componentes ya creados y estandarizados para el desarrollo de la interfaz, como botones, _cards_, _switches_, etc.
 
-Los paquetes asociadas a la implementación de MaterialUI en la interfaz son
+Los paquetes asociadas a la implementación de Material en la interfaz son
 
 - [@emotion/react](https://www.npmjs.com/package/@emotion/react)
 - [@emotion/styled](https://www.npmjs.com/package/@emotion/styled)
@@ -34,10 +34,18 @@ En este repositorio, se encuentra un ejemplo sencillo de autenticación y autori
 
 > Es completamente necesario para poder utilizar funcionalidades de autorización y autenticación levantar una instancia de Keycloak, que se puede hacer fácilmente utilizando [Docker](https://www.docker.com/), como se explica a continuación.
 
-#### Levantar una instancia de Keycloak utilizando Docker
+En el siguiente [link](https://git.municipiosanjuan.gob.ar/-/snippets/7) explico como levantar una instancia local de Keycloak, y como probar las funcionalidades de autenticación y autorización en una aplicación básica de React.
 
-Una vez que ya instalado Docker, hay que posicionarse en la terminal que prefiramos donde se encuentra el archivo `docker-compose.yml`. Una vez posicionados, hay que ejecutar el siguiente comando
+### Manejo de Formularios con Formik y Yup
 
-    $ docker-compose up -d
+Recomiendo, para el manejo de formularios dentro de React, utilizar [Formik](https://formik.org/), en conjunto con [Yup](https://www.npmjs.com/package/yup) para realizar una fácil y concisa implementación de formularios.
 
-Con esto, estaríamos levantando una instancia de Keycloak, que puede ser utilizada por la aplicación de React.
+En el siguiente [link](https://git.municipiosanjuan.gob.ar/-/snippets/3) explico cómo se puede utilizar Formik y Yup para el manejo y validación de formularios en React.
+
+### Manejo de Errores (Client-side)
+
+Para evitar que el error de un componente se propague a toda la aplicación, y se produzca un pantallazo blanco, podemos encapsular el error utilizando un componente de clase `ErrorBoundary`. Recomiendo utilizarlo para el manejo de errores del lado del cliente, para brindar una mejor experiencia de usuario.
+
+El componente debe envolver aquellos componentes que sean propensos a disparar errores, para evitar que se dispersen al resto de la aplicación.
+
+En el siguiente [link](https://git.municipiosanjuan.gob.ar/-/snippets/6) explico cómo se puede implementar el componente `ErrorBoundary` dentro de la aplicación.
