@@ -1,6 +1,6 @@
 version: "3.4"
 services:
-  dashboard-image:
+  app-image:
     image: node:alpine
     container_name: basic-app
     entrypoint: /bin/sh
